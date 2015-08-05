@@ -23,6 +23,8 @@ DOGE in faucet:
     $randomhigh = 5;
     
     $walletaccount = "facuet";
+    
+    $dev = false; //Set to TRUE to enable error reporting (Usefull for development!)
     //-----
     
     //----[Debug]
