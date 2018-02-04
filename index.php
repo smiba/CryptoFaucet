@@ -4,7 +4,7 @@
 <body>
 <?php
     //----[Settings]
-    $version = "1.3.0";
+    $version = "1.3.1";
 
     $coinname = "";
 	
@@ -22,7 +22,7 @@
 	
     $randomlow = 5;
     $randomhigh = 50;
-	$randomdivide = 10000; //To create numbers lower then 1.0
+    $randomdivide = 10000; //To create numbers lower then 1.0
 
     $walletaccount = "faucet"; //Keep empty to just use the main wallet
 	
@@ -50,7 +50,7 @@
     echo "</b> - Donate to the faucet: ".$faucet->getaccountaddress("$walletaccount")."<br />";
 
     if(!empty($_POST['address'])) {
-		 $username = $_POST['address'];
+		$username = $_POST['address'];
 		$ip = $_SERVER['REMOTE_ADDR'];
 		
         if($faucet->getbalance("$walletaccount") < $minbalance){
@@ -86,8 +86,8 @@
 			}
         }
     }
-	$faucetlowcalc = $randomlow / 10000;
-	$faucethighcalc = $randomhigh / 10000;
+	$faucetlowcalc = $randomlow / $randomdivide;
+	$faucethighcalc = $randomhigh / $randomdivide;
 	echo "<br/>You can currently get between $faucethighcalc and $faucetlowcalc from this faucet every 8 hours. Good luck!<br/>";
     echo '<br />Your $coinname address: <form Name = "getcoin" Method = "POST" ACTION = ""><INPUT TYPE = "text" VALUE = "" NAME = "address" /><INPUT TYPE = "submit" Name = "submit" VALUE = "Roll!" /><br/><br/><div class="g-recaptcha" data-sitekey="$capatchaSiteKey"></div>';
      ?>
