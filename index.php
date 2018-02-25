@@ -4,7 +4,7 @@
 <body>
 <?php
     //----[Settings]
-    $version = "1.3.1";
+    $version = "1.3.2";
 
     $coinname = "";
 	
