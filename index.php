@@ -89,7 +89,7 @@
 	$faucetlowcalc = $randomlow / $randomdivide;
 	$faucethighcalc = $randomhigh / $randomdivide;
 	echo "<br/>You can currently get between $faucethighcalc and $faucetlowcalc from this faucet every 8 hours. Good luck!<br/>";
-    echo '<br />Your $coinname address: <form Name = "getcoin" Method = "POST" ACTION = ""><INPUT TYPE = "text" VALUE = "" NAME = "address" /><INPUT TYPE = "submit" Name = "submit" VALUE = "Roll!" /><br/><br/><div class="g-recaptcha" data-sitekey="'.$capatchaSiteKey.'"></div>';
+    echo '<br />Your '.$coinname.' address: <form Name = "getcoin" Method = "POST" ACTION = ""><INPUT TYPE = "text" VALUE = "" NAME = "address" /><INPUT TYPE = "submit" Name = "submit" VALUE = "Roll!" /><br/><br/><div class="g-recaptcha" data-sitekey="'.$capatchaSiteKey.'"></div>';
      ?>
 </form>
 </table><p><font size="2">Simple faucet base coded by Smiba - version <?php echo $version; //Do not remove the base coded by ?></font></p>
