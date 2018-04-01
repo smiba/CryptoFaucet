@@ -1,4 +1,4 @@
 CryptoFaucet
 ============
 
-Basic Script for starting a faucet
+This is a basic set of scripts for starting a cryptocurrency faucet.
